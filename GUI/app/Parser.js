@@ -27,7 +27,7 @@ class Parser{
 
 
         this.props.title.innerHTML = 'Concentration Rate'
-        this.props.rate.innerHTML = `<p class="rate" >Select states below to get Music Assistance</p>`
+        this.props.rate.innerHTML = `<p class="rate" >Select a state below to get Music Assistance</p>`
         
         var buttons = document.createElement('div');
         var button1 = document.createElement("button");

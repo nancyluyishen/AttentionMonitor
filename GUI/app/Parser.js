@@ -36,7 +36,7 @@ class Parser{
         var stop = document.createElement("button");
         button1.innerHTML = "Over-Focused";
         button2.innerHTML = "Unfocused";
-        button3.innerHTML = "Drowsed";
+        button3.innerHTML = "Drowsy";
         stop.innerHTML = "Stop Music";
         
         const EL_body = document.querySelector("body");
@@ -47,7 +47,7 @@ class Parser{
         const changeRate = (rate) => this.props.rate.innerHTML = rate;
         button1.addEventListener("click", () => changeRate(`<p class="rate" >State: Over-Focused -> Music help to get Relaxed</p>`));
         button2.addEventListener("click", () => changeRate(`<p class="rate" >State: Unfocused -> Music help to get Focused</p>`));
-        button3.addEventListener("click", () => changeRate(`<p class="rate" >State: Drowsed -> Music help to get Awake</p>`));
+        button3.addEventListener("click", () => changeRate(`<p class="rate" >State: Drowsy -> Music help to get Awake</p>`));
 
         var audio = document.createElement("AUDIO");
         audio.autoplay = true;
